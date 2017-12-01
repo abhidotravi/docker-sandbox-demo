@@ -1,1 +1,1 @@
-# ojai-spark-connector-sample
+# Spark DB Connector Demo

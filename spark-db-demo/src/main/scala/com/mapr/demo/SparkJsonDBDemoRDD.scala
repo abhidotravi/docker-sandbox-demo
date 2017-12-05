@@ -16,7 +16,6 @@ object SparkJsonDBDemoRDD {
   def main(args: Array[String]): Unit = {
     val spark = new SparkConf().setAppName("SparkJsonDBDemoRDD").setMaster("local[*]")
     val sc = new SparkContext(spark)
-    val table
 
     val businessRDD = sc.loadFromMapRDB[Business]("/demoVol/business_table").where(field("stars") > 3)
     println(businessRDD
